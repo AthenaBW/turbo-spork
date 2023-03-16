@@ -1,0 +1,27 @@
+*{ background-color: whitesmoke;
+
+}
+
+.Wrapper {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Timer p{
+    float: right;
+    color: black;
+padding: 10px;
+
+}
+
+button{
+    color: blueviolet;
+border: none;
+}
+
+.Inner-Wrapper {
+height: 100;
+}
