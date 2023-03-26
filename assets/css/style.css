@@ -1,15 +1,75 @@
-*{ background-color: whitesmoke;
-
-}
 
 .Wrapper {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+padding: 0 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+text-align: center;
 }
 
+.Quiz-Wrapper{
+    margin: 0 auto;
+    width: 600px;
+    padding: 1px 12px 12px 12px
+}
+
+.buttons{
+    margin: 2rem 0 4rem 0;
+}
+
+.btn {
+    text-align: left;
+    background-color: darkorchid;
+    width: 60%;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 8px 0;
+    padding: 1rem;
+    
+}
+.btn:hover { cursor: pointer;
+    background-color: violet;
+    color: white;
+
+}
+
+.play-again{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.play-again a {
+    font-size: 1.5rem ;
+    font-weight: 500;
+    color: white;
+    background-color: darkorchid;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.play-again a:hover{
+    background-color: violet;
+}
+.quiz-header{
+    display: flex;
+    justify-content: space-between;
+}
+.quiz-header #countdown{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: purple;
+    padding: 6px;
+    color: white;
+    border-radius: 4px;
+    margin: 1px;
+}
+
+/*  
 .Timer p{
     float: right;
     color: black;
@@ -23,5 +83,9 @@ border: none;
 }
 
 .Inner-Wrapper {
+    width: 100;
 height: 100;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }

@@ -11,29 +11,37 @@
 
 <body>
     <!-- Wrapper Div -->
-    <div class="Wrapper" id="Wrapper">
+    <div class="Wrapper">
+        <div class="quiz-Wrapper">
+            <div id="quiz">
+                <h1>Coding Quiz Challenge</h1>
+                <div class="quiz-header">
+                    <p id="left">Question # of #</p>
+                    <p id="countdown"></p>
+                 </div>
 
-        <!-- Timer & HighScore Div -->
-        <div class="Timer" id="Timer">
-            <button> View Highscores </button>
-            <p> Countdown:</p>
-        </div>
+                 <p id="question"></p>
 
-        <!-- Inner Wrapper Div -->
-
-        <div class="Inner-Wrapper">
-
-            <!-- pop up window -->
-
-            <header class="Pop-up" id="Pop-up"> </header>
-
-            <!-- Main Quiz Container -->
-            
-            <main class="Quiz" id="Quiz">
-
-            </main>
+                 <div class="buttons">
+                    <button class="btn" id="btn0">
+                        A. <span id="choice0"></span>
+                    </button>
+                    <button class="btn" id="btn1">
+                        B. <span id="choice1"></span>
+                    </button>
+                    <button class="btn" id="btn2">
+                        C. <span id="choice2"></span>
+                    </button>
+                    <button class="btn" id="btn3">
+                        D. <span id="choice3"></span>
+                    </button>
+                 </div>
+                 <hr>
+                 <footer> <p>(Answer right or wrong)</p> </footer>
+            </div>
         </div>
     </div>
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
