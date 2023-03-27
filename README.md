@@ -4,6 +4,10 @@
 
 A coding quiz designed for the user to practice their knowledge of basic coding information. When an answer is incorrect their time will be deducted by 3 seconds. 
 The user will also see when answering questions whether thei answer was corrent or incorrect. Final score displayed at the end.
+
+https://athenabw.github.io/turbo-spork/
+https://github.com/AthenaBW/turbo-spork
+
 ![Alt text](assets/Screenshot%202023-03-27%20191656.png)
 
 
