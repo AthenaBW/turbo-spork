@@ -84,7 +84,7 @@ function guess(id, guess) {
     } else {
       let messageElement = document.getElementById("message");
       messageElement.innerHTML = "Incorrect!";
-      quizTimeRemaining -= 1; // Deduct 1 second from timer
+      quizTimeRemaining -= 3; // Deduct 3 second from timer
     }
     quiz.guess(guess);
     displayQuestion();
@@ -100,7 +100,7 @@ function showLeft() {
     `Question ${currentQuestion} of ${quiz.questions.length} `;
 }
 
-//Showing score
+//Showing score and play again option
 
 function showScore() {
   var quizEndHTML =
