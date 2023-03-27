@@ -1,3 +1,25 @@
+/* global */
+* {
+    justify-content: center;
+    text-align: center;
+}
+
+h1{font-size: 30px;
+    text-align: center;
+}
+
+header{
+    padding-top: 10rem;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+}
+/* paragraph tag */
+p{
+    font-size: 30px;
+}
+
+/* wrappers */
 
 .Wrapper {
     max-width: 900px;
@@ -16,12 +38,14 @@ text-align: center;
     padding: 1px 12px 12px 12px
 }
 
+/* Buttons */
+
 .buttons{
     margin: 2rem 0 4rem 0;
 }
 
 .btn {
-    text-align: left;
+    text-align: center;
     background-color: darkorchid;
     width: 60%;
     font-size: 1rem;
@@ -30,14 +54,16 @@ text-align: center;
     border-radius: 5px;
     margin: 8px 0;
     padding: 1rem;
-    
+
 }
+/* Hover options for buttons */
 .btn:hover { cursor: pointer;
     background-color: violet;
     color: white;
 
 }
 
+/* play again button text */
 .play-again{
     text-align: center;
     margin: 0 auto;
@@ -52,40 +78,22 @@ text-align: center;
     border-radius: 5px;
 }
 
+/* Play again button hover options */
 .play-again a:hover{
     background-color: violet;
 }
+
 .quiz-header{
     display: flex;
     justify-content: space-between;
 }
+
+/* Timer Section */
+
 .quiz-header #countdown{
     font-size: 1.5rem;
     font-weight: 600;
     background-color: purple;
     padding: 6px;
     color: white;
-    border-radius: 4px;
-    margin: 1px;
-}
-
-/*  
-.Timer p{
-    float: right;
-    color: black;
-padding: 10px;
-
-}
-
-button{
-    color: blueviolet;
-border: none;
-}
-
-.Inner-Wrapper {
-    width: 100;
-height: 100;
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
+    border-radius: 4px;}

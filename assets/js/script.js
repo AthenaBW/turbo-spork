@@ -1,3 +1,16 @@
+//Displays welcome for user to press okay before quiz begins, welcome message hidden after user confrims
+
+const welcomeMessage = document.getElementById('welcomeMessage');
+        const startBtn = document.getElementById('startBtn');
+        const gameWrapper = document.getElementById('gameWrapper');
+
+        startBtn.addEventListener('click', () => {
+            welcomeMessage.style.display = 'none'; // hide welcome message
+            gameWrapper.style.display = 'block'; // show game
+            startCountdown();
+            displayQuestion();
+        })
+
 //Constructor function for the beginning structure of "Quiz" 
 
 function Quiz(questions) {
@@ -9,10 +22,12 @@ function Quiz(questions) {
     return this.questions[this.questionIndex];
   }
 
-
+// Deducts 3 second from timer every wrong choice (function for correct or wrong guess)
   this.guess = function (answer) {
     if (this.getQuestionIndex().isCorrectAnswer(answer)) {
       this.score++;
+    } else {
+      quizTimeRemaining -= 3; 
     }
     this.questionIndex++;
   }
@@ -35,11 +50,12 @@ function Question(text, choices, answer) {
 }
 
 //Displays current Question , Displays final score if quiz has ended 
+
 function displayQuestion() {
   if (quiz.isEnded()) {
     showScore();
   } else {
-    //question show
+
     let questionElement = document.getElementById("question");
     questionElement.innerHTML = quiz.getQuestionIndex().text;
 
@@ -62,6 +78,14 @@ function displayQuestion() {
 function guess(id, guess) {
   let button = document.getElementById(id);
   button.onclick = function () {
+    if (quiz.getQuestionIndex().isCorrectAnswer(guess)) {
+      let messageElement = document.getElementById("message");
+      messageElement.innerHTML = "Correct!";
+    } else {
+      let messageElement = document.getElementById("message");
+      messageElement.innerHTML = "Incorrect!";
+      quizTimeRemaining -= 1; // Deduct 1 second from timer
+    }
     quiz.guess(guess);
     displayQuestion();
   }
@@ -129,7 +153,7 @@ let quiz = new Quiz(questions);
 
 displayQuestion();
 
-//Timer 
+//Timer for 30 seconds
 
 const quizTimeInSeconds = 30;
 let quizTimeRemaining = quizTimeInSeconds;

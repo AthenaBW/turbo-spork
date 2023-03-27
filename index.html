@@ -10,38 +10,48 @@
 </head>
 
 <body>
-    <!-- Wrapper Div -->
-    <div class="Wrapper">
+    <!-- Welcome screen for user to read instructions and confrim start -->
+    <div id="welcomeMessage">
+        <header>Welcome to the Coding Quiz!</header>
+        <p>Answer the following code related questions in the allotted time. Incorrect answers will
+            deduct the amount of time given by 3 seconds! Good luck!</p>
+        <button class="btn" id="startBtn">Start Game</button>
+    </div>
+    <!-- Quiz wrappers -->
+    <div id="gameWrapper" style="display:none">
         <div class="quiz-Wrapper">
             <div id="quiz">
                 <h1>Coding Quiz Challenge</h1>
                 <div class="quiz-header">
                     <p id="left">Question # of #</p>
                     <p id="countdown"></p>
-                 </div>
-
-                 <p id="question"></p>
-
-                 <div class="buttons">
+                </div>
+                <!-- Questions Followed by buttons -->
+                <p id="question"></p>
+                <div class="buttons">
                     <button class="btn" id="btn0">
-                        A. <span id="choice0"></span>
+                        1. <span id="choice0"></span>
                     </button>
                     <button class="btn" id="btn1">
-                        B. <span id="choice1"></span>
+                        2. <span id="choice1"></span>
                     </button>
                     <button class="btn" id="btn2">
-                        C. <span id="choice2"></span>
+                        3. <span id="choice2"></span>
                     </button>
                     <button class="btn" id="btn3">
-                        D. <span id="choice3"></span>
+                        4. <span id="choice3"></span>
                     </button>
-                 </div>
-                 <hr>
-                 <footer> <p>(Answer right or wrong)</p> </footer>
+                </div>
+                <hr>
+                <!-- Alert whether answer was incorrect or correct -->
+                <div id="message">
+                </div>
             </div>
         </div>
     </div>
-<script src="assets/js/script.js"></script>
+<!-- javascript file -->
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
