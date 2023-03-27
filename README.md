@@ -4,8 +4,7 @@
 
 A coding quiz designed for the user to practice their knowledge of basic coding information. When an answer is incorrect their time will be deducted by 3 seconds. 
 The user will also see when answering questions whether thei answer was corrent or incorrect. Final score displayed at the end.
-
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/AthenaBW/Desktop/Bootcamp/Activity-Workspace/Module%20Challenges/turbo-spork/assets/Screenshot%202023-03-27%20191656.png?version%3D1679959412105)
+![Alt text](assets/Screenshot%202023-03-27%20191656.png)
 
 
 ## Installation
